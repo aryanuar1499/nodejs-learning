@@ -181,35 +181,80 @@ console.log("C");
 
 // console.log("D");
 
-console.log("===PHASE TEST===");
+// console.log("===PHASE TEST===");
 
-const fs = require("fs");
+// const fs = require("fs");
 
-console.log("A");
+// console.log("A");
 
-fs.readFile(
-    "data.txt",
-    "utf8",
-    (err, data) => {
-        if (err) {
-            console.log(err.message);
-            return;
-        }
-        console.log("B");
-    }
-);
+// fs.readFile(
+//     "data.txt",
+//     "utf8",
+//     (err, data) => {
+//         if (err) {
+//             console.log(err.message);
+//             return;
+//         }
+//         console.log("B");
+//     }
+// );
 
-setTimeout(() => {
-    console.log("C");
-}, 0);
+// setTimeout(() => {
+//     console.log("C");
+// }, 0);
 
-setImmediate(() => {
-    console.log("D");
-});
+// setImmediate(() => {
+//     console.log("D");
+// });
 
-console.log("E");
+// console.log("E");
 
-setTimeout(() => {
+// setTimeout(() => {
     
-}, timeout);
+// }, timeout);
+
+// const fs = require("fs");
+// console.log(fs);
+
+
+// const produk = {
+//     nama: "Laptop ASUS",
+//     harga: 8500000,
+
+//     tampilkan: function() {
+//         console.log(this.nama);
+//         console.log(this.harga);
+        
+//     }
+// };
+// console.log(produk);
+// console.log(produk.tampilkan);
+// produk.tampilkan()
+
+// console.log("===========================");
+// const produk = {
+//     nama: "Laptop ASUS",
+//     harga: 8500000,
+
+//     tampilkan: function() {
+//         console.log(this.nama);
+//         console.log(this.harga);
+//     }
+// };
+// // const fungsiSaya = produk.tampilkan;
+// const fungsiSaya = produk.tampilkan.bind(produk);
+// console.log(fungsiSaya);
+// fungsiSaya();
+
+// const tambah = require("./matematika");
+
+// console.log(tambah(10, 20));
+
+const matematika = require("./matematika");
+
+console.log(matematika);
+// console.log(matematika.tambah(15, 35));
+// console.log(matematika.kurang(30, 50));
+
+
 
